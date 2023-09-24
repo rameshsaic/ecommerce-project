@@ -103,8 +103,9 @@
             </div>
             <div class="row it_works">
               <?php
+                        $dbHostname = 'my-db-container'
 
-                        $link = mysqli_connect('localhost', 'ecomuser', 'ecompassword', 'ecomdb');
+                        $link = mysqli_connect('$dbHostname', 'ecomuser', 'ecompassword', 'ecomdb');
 
                         if ($link) {
                         $res = mysqli_query($link, "select * from products;");
