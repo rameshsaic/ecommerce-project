@@ -105,7 +105,7 @@
               <?php
                        
 
-                        $link = mysqli_connect('my-db-container', 'ecomuser', 'ecompassword', 'ecomdb');
+                        $link = mysqli_connect('db', 'ecomuser', 'ecompassword', 'ecomdb');
 
                         if ($link) {
                         $res = mysqli_query($link, "select * from products;");
